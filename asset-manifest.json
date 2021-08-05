@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Ubuntu/static/css/main.fab0626d.chunk.css",
+    "main.js": "/Ubuntu/static/js/main.e682f730.chunk.js",
+    "main.js.map": "/Ubuntu/static/js/main.e682f730.chunk.js.map",
+    "runtime-main.js": "/Ubuntu/static/js/runtime-main.0ae91d41.js",
+    "runtime-main.js.map": "/Ubuntu/static/js/runtime-main.0ae91d41.js.map",
+    "static/js/2.2d18346e.chunk.js": "/Ubuntu/static/js/2.2d18346e.chunk.js",
+    "static/js/2.2d18346e.chunk.js.map": "/Ubuntu/static/js/2.2d18346e.chunk.js.map",
+    "static/js/3.c574511b.chunk.js": "/Ubuntu/static/js/3.c574511b.chunk.js",
+    "static/js/3.c574511b.chunk.js.map": "/Ubuntu/static/js/3.c574511b.chunk.js.map",
+    "index.html": "/Ubuntu/index.html",
+    "static/css/main.fab0626d.chunk.css.map": "/Ubuntu/static/css/main.fab0626d.chunk.css.map",
+    "static/js/2.2d18346e.chunk.js.LICENSE.txt": "/Ubuntu/static/js/2.2d18346e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ae91d41.js",
+    "static/js/2.2d18346e.chunk.js",
+    "static/css/main.fab0626d.chunk.css",
+    "static/js/main.e682f730.chunk.js"
+  ]
+}
