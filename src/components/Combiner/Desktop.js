@@ -6,15 +6,12 @@ import Window from '../Background/window'
 import AllApplications from './allApps'
 import UbuntuApp from '../Background/ubantuApp'
 import DesktopMenu from '../Menu/desktop'
+import DefaultMenu from '../Menu/subMenu'
 import $ from 'jquery';
 import ReactGA from 'react-ga';
 
 export default class Desktop extends Component {
-
-
     constructor() {
-
-
         super();
         this.app_stack = [];
         this.initFavourite = {};
@@ -62,7 +59,7 @@ export default class Desktop extends Component {
                 apps.push({
                     id: `new-folder-${folder.id}`,
                     title: folder.name,
-                    icon: '../../icons/themes/Yaru/system/folder.png',
+                    icon: './themes/Yaru/system/folder.png',
                     disabled: true,
                     favourite: false,
                     desktop_shortcut: true,
@@ -110,7 +107,7 @@ export default class Desktop extends Component {
         }
     }
 
-    showContextMenu = (e, menuName  ) => {
+    showContextMenu = (e, menuName /* context menu name */) => {
         let { posx, posy } = this.getMenuPosition(e);
         let contextMenu = document.getElementById(`${menuName}-menu`);
 
@@ -482,6 +479,7 @@ export default class Desktop extends Component {
             this.setState({ showNameBar: false });
         }
 
+
         return (
             <div className="absolute rounded-md top-1/2 left-1/2 text-center text-white font-light text-sm bg-ub-cool-grey transform -translate-y-1/2 -translate-x-1/2 sm:w-96 w-3/4 z-50 ">
                 <div className="w-full flex flex-col justify-around items-start pl-6 pb-8 pt-6">
@@ -527,11 +525,11 @@ export default class Desktop extends Component {
 
             { /*Context Menus */}
             
-             <DesktopMenu active={this.state.context_menus.desktop} openApp={this.openApp} addNewFolder={this.addNewFolder} />
-             {/*
+             <DesktopMenu active={this.state.context_menus.desktop}  openApp={this.openApp} addNewFolder={this.addNewFolder} />
+             
             <DefaultMenu active={this.state.context_menus.default} />
             
-            */}
+           
            
 
             {/* Folder Input Name Bar */}
